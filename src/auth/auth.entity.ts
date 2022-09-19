@@ -1,10 +1,10 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+// import { Column, Entity, PrimaryColumn } from "typeorm";
 
-@Entity()
-export class Auth{
-    @PrimaryColumn()
-    uid: number;
+// @Entity()
+// export class Auth{
+//     @PrimaryColumn()
+//     uid: number;
 
-    @Column()
-    token: string;
-}
+//     @Column()
+//     token: string;
+// }
