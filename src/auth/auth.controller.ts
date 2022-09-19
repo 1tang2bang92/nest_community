@@ -1,4 +1,17 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common'
+import { ApiOperation, ApiTags } from '@nestjs/swagger'
 
 @Controller('auth')
-export class AuthController {}
+@ApiTags('Auth api')
+export class AuthController {
+  @Get('/login')
+  @ApiOperation({
+    summary: 'login',
+    description: `
+    asdf\n
+    `,
+  })
+  async login() {
+    return 'hello'
+  }
+}
